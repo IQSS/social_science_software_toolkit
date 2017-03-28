@@ -4,17 +4,22 @@
 
 **UNDER DEVELOPMENT. Everything in this repository is under review and subject to change.**
 
-## About
+## Aims
 
 This repository contains IQSS best practices and points to resources for developing social science statistical software that is:
 
-- robust
+- robust,
 
-- user friendly
+- user-friendly,
 
-- persistant
+- persistant,
 
-- attributable
+- attributable,
 
-- enables reproducible research
+- enables reproducible research.
 
+## Contents
+
+This repository has the following contents:
+
+- [IQSS Best Practices for Social Science Software Development](iqss_ss_best_practices.md)
