@@ -42,12 +42,66 @@ An IQSS Report Card **may** have the following child nodes. Typically different 
 
 The `Documentation` parent node **may** contain the following fields:
 
-| Name              | Description | Language |
-| ----------------- | ----------- | -------- |
-| `readme`          | A README file explaining the software's aims and with a quickstart example | all |
-| `changelog`       | Document detailing all changes per release | non-R |
-| `NEWS`            | Document detailing all changes per release | R |
-| `bugreports`      | URL for public location to make bug reports | all |
-| `vignettes`       | Longform documentation with detailed descriptions | R |
-| `website`         | A website dynamically generated documentation website | non-R |
-| `pkgdown_website` | A website dynamically generated with the [pkgdown](https://github.com/hadley/pkgdown) package | R |
+| Name              | Description | Type     | Language |
+| ----------------- | ----------- | -------- | -------- |
+| `readme`          | A README file explaining the software's aims and with a quickstart example | boolean | all |
+| `changelog`       | Document detailing all changes per release | boolean | non-R |
+| `NEWS`            | Document detailing all changes per release | boolean | R |
+| `bugreports`      | URL for public location to make bug reports | boolean | all |
+| `vignettes`       | Longform documentation with detailed descriptions | boolean | R |
+| `website`         | A website dynamically generated documentation website | boolean | non-R |
+| `pkgdown_website` | A website dynamically generated with the [pkgdown](https://github.com/hadley/pkgdown) package | boolean | R |
+
+### License
+
+The `License` parent node **may** contain the following fields:
+
+| Name              | Description              | Type     | Language |
+| ----------------- | ------------------------ | -------- | -------- |
+| gpl3_license      | Contains a GPL-3 License | boolean  | all      |
+
+### Version_Control
+
+The `Version_Control` parent node **may** contain the following fields:
+
+| Name              | Description                 | Type     | Language |
+| ----------------- | --------------------------- | -------- | -------- |
+| git               | Version controlled with git | boolean  | all      |
+| github            | Source developed on GitHub  | boolean  | all      |
+| gitlab            | Source developed on GitLab  | boolean  | all      |
+
+### Testing
+
+The `Testing` parent node **may** contain the following fields:
+
+| Name              | Description                              | Type     | Language |
+| ----------------- | ---------------------------------------- | -------- | -------- |
+| uses_travis       | Uses Travis CI                           | boolean  | all      |
+| uses_appveyor     | Uses Appveyor CI                         | boolean  | all      |
+| uses_testthat     | Uses testthat package                    | boolean  | R        |
+| test_coverage     | Percent of source covered by tests       | integer  | all      |
+| build_check       | Reports software build and check results | node     | all      |
+
+The `build_check` node **may** contain the following fields:
+
+| Name                 | Description                      | Type     | Language |
+| -------------------- | -------------------------------- | -------- | -------- |
+| build_check_complete | Able to complete build and check | boolean  | all      |
+| no_check_warings     | Check without warnings           | boolean  | all (?)  |
+| no_check_errors      | Check without errors             | boolean  | all (?)  |
+| no_check_notes       | Check without notes              | boolean  | all (?)  |
+
+
+### Background
+
+The `Background` parent node **may** contain the following fields:
+
+| Name                       | Description                                                | Type     | Language |
+| -------------------------- | ---------------------------------------------------------- | -------- | -------- |
+| package_name               | Name of the software package for the Report Card           | string   | all      |
+| package_version            | Version number of the software package for the Report Card | string   | all      |
+| package_language           | Primary programming language used to write the package     | string   | all      |
+| package_commit_sha         | Most recent package git commit SHA                         | numeric  | all      |
+| iqss_bestpractices_version | IQSS Best Practices version references                     | string   | all      |
+| iqssdevtools_version       | IQSS Best Practices version references                     | string   | R        |
+| check_time                 | Time of IQSS Best Practices check                          | string   | all      |
