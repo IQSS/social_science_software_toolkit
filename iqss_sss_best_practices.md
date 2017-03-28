@@ -62,4 +62,4 @@ Social science statistical software is more likely to acheive the aims listed ab
 
 -   {SOFTWARE CIATION}
 
-7.  Uses an [IQSS Report Card](report_card/iqss_reportcard_spec.md) to report their minimal compliance with these Best Practices
+7.  Uses an [IQSS Report Card](report_card/iqss_report_card_spec.md) to report their minimal compliance with these Best Practices
