@@ -14,7 +14,7 @@ This repository contains IQSS best practices and points to resources for develop
 
 -   user-friendly,
 
--   persistant,
+-   persistent,
 
 -   attributable,
 
