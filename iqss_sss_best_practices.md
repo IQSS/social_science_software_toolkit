@@ -36,6 +36,6 @@ Social science statistical software is more likely to acheive the aims listed ab
 
 6.  Are clearly citeable
 
-7.  Documentation is generated (automatically) for each version, in machine and human readable formats 
+7.  Documentation is generated (automatically) for each version, in machine and human readable formats
 
-8. Are easily findable by the community, shared in public repositories
+8.  Are easily findable by the community, shared in public repositories

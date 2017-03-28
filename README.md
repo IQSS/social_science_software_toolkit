@@ -20,6 +20,10 @@ This repository contains IQSS best practices and points to resources for develop
 
 -   enables reproducible research.
 
+## Contributing
+
+If you are interested in contributing to the IQSS Social Science Software Toolkit, please first read our [Contributor Guidelines](CONTRIBUTING.md) and [Code of Conduct](contributing/iqss_code_of_conduct.md).
+
 ## Contents
 
 This repository has the following contents:
