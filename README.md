@@ -2,7 +2,7 @@
 
 ![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)
 
-**INCOMPLETE AND UNDER DEVELOPMENT**
+**UNDER DEVELOPMENT. Everything in this repository is under review and subject to change.**
 
 ## About
 
