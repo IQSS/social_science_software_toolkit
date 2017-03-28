@@ -27,3 +27,15 @@ This repository has the following contents:
 -   [IQSS Best Practices for Social Science Software Development](iqss_sss_best_practices.md)
 
 -   [Guidelines for contributing to the toolkit](CONTRIBUTING.md)
+
+-   [testing](testing/)
+
+## Maintainers
+
+The following maintainers are responsible the point of contacts for the following components of this toolkit. Please contact them for queries in the relevant areas:
+
+-   Dataverse:
+
+-   R packages: Christopher Gandrud gandrud@iq.harvard.edu.
+
+-   Python packages:
