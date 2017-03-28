@@ -26,4 +26,4 @@ This repository has the following contents:
 
 -   [IQSS Best Practices for Social Science Software Development](iqss_sss_best_practices.md)
 
--  [Guidelines for contributing to the toolkit](CONTRIBUTING.md)
+-   [Guidelines for contributing to the toolkit](CONTRIBUTING.md)
