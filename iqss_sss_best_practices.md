@@ -6,7 +6,7 @@
 
 # Aims
 
-The amis of the IQSS Best Practices for Social Science Software Development are to enable the creation and maintenance of software that is:
+The amis of the Institute for Quantitative Social Science (IQSS), Harvard University Best Practices for Social Science Software Development are to enable the creation and maintenance of software that is:
 
 -   robust,
 

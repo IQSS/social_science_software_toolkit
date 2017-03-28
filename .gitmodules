@@ -1,0 +1,3 @@
+[submodule "IQSSdevtools"]
+	path = IQSSdevtools
+	url = https://github.com/IQSS/IQSSdevtools
