@@ -35,3 +35,7 @@ Social science statistical software is more likely to acheive the aims listed ab
 5.  Are developed in the open using tools and standards that enable external contributions
 
 6.  Are clearly citeable
+
+7.  Documentation is generated (automatically) for each version, in machine and human readable formats 
+
+8. Are easily findable by the community, shared in public repositories
