@@ -32,6 +32,6 @@ Social science statistical software is more likely to acheive the aims listed ab
 
 4.  Are developed using version control
 
-5.  Are developed in the open using tools that enable external contributions
+5.  Are developed in the open using tools and standards that enable external contributions
 
 6.  Are clearly citeable

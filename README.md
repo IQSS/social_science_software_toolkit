@@ -28,7 +28,15 @@ This repository has the following contents:
 
 -   [Guidelines for contributing to the toolkit](CONTRIBUTING.md)
 
--   [testing](testing/)
+-   [Resources for software testing](testing/)
+
+-   [Tools for software citations](citation/)
+
+-   [Documents for guiding contributions](contributing/)
+
+-   [Resources for effective software documentation](documentation/)
+
+-   [Suggestions for version controlling a statistical software project](version_control/)
 
 ## Maintainers
 
