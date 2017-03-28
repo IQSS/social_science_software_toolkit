@@ -42,6 +42,10 @@ This repository has the following contents:
 
 -   [Suggestions for version controlling a statistical software project](version_control/)
 
+-   [IQSS Report Card](report_card/): schema for reporting to what extent a piece of social science statistical software minimally complies with the IQSS Best Practices.
+
+-   [IQSSdevtools](https://github.com/IQSS/IQSSdevtools): an R package for initialising, checking, and publishing packages that complie with the IQSS Best Practices.
+
 ## Maintainers
 
 The following maintainers are responsible the point of contacts for the following components of this toolkit. Please contact them for queries in the relevant areas:
