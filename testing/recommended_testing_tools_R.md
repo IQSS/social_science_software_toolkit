@@ -49,6 +49,8 @@ Setting up an effective testing suite for R can involve the following tools:
 
 -   one or more continuous integration service such as [Travis CI](https://travis-ci.org/) and [Appveyor](https://www.appveyor.com/)
 
+-   code coverage reported on [codecov.io](https://codecov.io/)
+
 ## Setup steps
 
 If you **have not initialized** you package, they you can use the `init_iqss_package` function from the IQSSdevtools package to initialize a skeleton package with the infrastructure needed to create a test suite. This will include:

@@ -30,6 +30,7 @@ Documentation
 License
 Version_Control
 Testing
+Citation
 Background
 ```
 
@@ -98,6 +99,9 @@ The `build_check` node **may** contain the following fields:
 | `no_check_errors`      | Check without errors             | boolean  | all (?)  |
 | `no_check_notes`       | Check without notes              | boolean  | all (?)  |
 
+### Citation
+
+The `Citation` parent node is UNDER DEVELPMENT.
 
 ### Background
 
