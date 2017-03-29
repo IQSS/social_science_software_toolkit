@@ -10,7 +10,7 @@
 
 # Aims
 
-The amis of the Institute for Quantitative Social Science (IQSS), Harvard University Best Practices for Social Science Software Development are to enable the creation and maintenance of software that is:
+The aims of the Institute for Quantitative Social Science (IQSS), Harvard University Best Practices for Social Science Software Development are to enable the creation and maintenance of software that is:
 
 -   robust,
 
@@ -26,13 +26,13 @@ The best practices in this document are intended to be applicable to social scie
 
 ## Best practices
 
-Social science statistical software is more likely to acheive the aims listed above if they have the following characteristics:
+Social science statistical software is more likely to achieve the aims listed above if they have the following characteristics:
 
 1.  Are informatively **documented**
 
 -   Documentation is written as close to the source code as possible, e.g. using [Doxygen](http://www.stack.nl/~dimitri/doxygen/) or a Doxygen-like markup.
 
--   Documentation is comprehensive and approachably written.
+-   Documentation is comprehensive and aproachably written.
 
 -   Documentation is accessible both alongside the software and on a website.
 

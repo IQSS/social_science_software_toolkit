@@ -12,7 +12,7 @@ The Best Practices are *in addition to* package requirements specified by the [C
 
 ## IQSSdevtools
 
-Use the [**IQSSdevtools** package (UNDER DEVELOPEMT)](https://github.com/IQSS/IQSSdevtools) to automate much of the process of initializing, building, checking, and publishing your package in compliance with the Best Practices. Use the following functions as in your software development workflow:
+Use the [**IQSSdevtools** package (UNDER DEVELOPMENT)](https://github.com/IQSS/IQSSdevtools) to automate much of the process of initializing, building, checking, and publishing your package in compliance with the Best Practices. Use the following functions as in your software development workflow:
 
 -   `init_iqss_package`: create a package skeleton that includes whole or skeleton documents for most of the following Best Practice compliant parts.
 
@@ -36,17 +36,17 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPEMT)](https://github.com/IQSS/IQ
 
 -   The package DESCRIPTION file should include a `BugReports` field with a URL that users can visit to report issues with the package. [GitHub Issues](https://guides.github.com/features/issues/) is the recommended platform for handling bug reports.
 
-    +   In addition to a place to make bugreports, an easy to use discussion forum platform should be available and maintained to disceminate announcements and build a package community. Examples include [Google Groups](https://groups.google.com), [Twitter](https://twitter.com/), and [Gitter](https://gitter.im).
+    +   In addition to a place to make bugreports, an easy to use discussion forum platform should be available and maintained to disseminate announcements and build a package community. Examples include [Google Groups](https://groups.google.com), [Twitter](https://twitter.com/), and [Gitter](https://gitter.im).
 
 -   In addition to the README.md and function specific documentation generated with **roxygen2**, longer explanations of methods and complex syntax examples should be documented with [vignettes](http://r-pkgs.had.co.nz/vignettes.html).
 
--   A guide for contributing to the package should be specifed in a CONTRIBUTING.md file {WORDING NOT FINALIZED} in the package's root directory. It should include a link to the [IQSS Code of Conduct](https://github.com/IQSS/social_science_software_toolkit/blob/master/contributing/iqss_code_of_conduct.md).
+-   A guide for contributing to the package should be specified in a CONTRIBUTING.md file {WORDING NOT FINALIZED} in the package's root directory. It should include a link to the [IQSS Code of Conduct](https://github.com/IQSS/social_science_software_toolkit/blob/master/contributing/iqss_code_of_conduct.md).
 
--   Documentation should be available both as part of the package installation and on a version controlled public website. **roxygen** documentation and vignettes can be transformed into this website with the [**pkgdown**](https://github.com/hadley/pkgdown) package. IQSS packages should be hoste on OpenScholar {INTEGRATION BETWEEN pkgdown AND OpenScholar not currently implemented}.
+-   Documentation should be available both as part of the package installation and on a version controlled public website. **roxygen** documentation and vignettes can be transformed into this website with the [**pkgdown**](https://github.com/hadley/pkgdown) package. IQSS packages should be hosted on OpenScholar {INTEGRATION BETWEEN pkgdown AND OpenScholar not currently implemented}.
 
 ### License
 
--   Unless there are compeling reasons for a different license, IQSS Best Practice packages should use an open source license, namely [GPL 3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+-   Unless there are compelling reasons for a different license, IQSS Best Practice packages should use an open source license, namely [GPL 3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 ### Testing
 
@@ -63,7 +63,7 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPEMT)](https://github.com/IQSS/IQ
 
     +   has [high quality expectations](https://github.com/IQSS/social_science_software_toolkit/blob/master/testing/recommended_testing_tools_R.md#what-is-a-high-quality-test),
 
-    +   is tested locally using `check(args = c('--as-cran'))` from the [**devtools**](https://CRAN.R-project.org/package=devtools) package and repotely on [Travis CI](https://travis-ci.org/) (Linux and macOS) and [Appveyor](https://www.appveyor.com/) (Windows). This tests that the package can build, all tests pass, including CRAN requirements.
+    +   is tested locally using `check(args = c('--as-cran'))` from the [**devtools**](https://CRAN.R-project.org/package=devtools) package and remotely on [Travis CI](https://travis-ci.org/) (Linux and macOS) and [Appveyor](https://www.appveyor.com/) (Windows). This tests that the package can build, all tests pass, including CRAN requirements.
 
     +   has code coverage reported on [codecov.io](https://codecov.io/).
 
