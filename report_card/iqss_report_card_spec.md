@@ -6,7 +6,7 @@
 | ------------ | ------------------- |
 | Authors      | Christopher Gandrud |
 | Version      | 0.0.0.9000          |
-| Last Updated | 2017-03-28          |
+| Last Updated | 2017-03-29          |
 | Created      | 2017-03-28          |
 
 ## Goals
@@ -45,11 +45,18 @@ The `Documentation` parent node **may** contain the following fields:
 | Name              | Description | Type     | Language |
 | ----------------- | ----------- | -------- | -------- |
 | `readme`          | A README file explaining the software's aims and with a quickstart example | boolean | all |
+| `roxygen`         | Documentation produced with [roxygen2](https://CRAN.R-project.org/package=roxygen2) | boolean | R |
 | `changelog`       | Document detailing all changes per release | boolean | non-R |
-| `NEWS`            | Document detailing all changes per release | boolean | R |
+| `news`            | Document detailing all changes per release (used instead of changelog) | boolean | R |
 | `bugreports`      | URL for public location to make bug reports | boolean | all |
 | `vignettes`       | Longform documentation with detailed descriptions | boolean | R |
-| `website`         | A website dynamically generated documentation website | boolean | non-R |
+| `website`         | A dynamically generated documentation website | node | all |
+
+The `website` node **may** contain the following fields:
+
+| Name                   | Description                      | Type     | Language |
+| ---------------------- | -------------------------------- | -------- | -------- |
+| `openscholar_website`  | A website hosted on OpenScholar  | boolean  | all      |
 | `pkgdown_website` | A website dynamically generated with the [pkgdown](https://github.com/hadley/pkgdown) package | boolean | R |
 
 ### License

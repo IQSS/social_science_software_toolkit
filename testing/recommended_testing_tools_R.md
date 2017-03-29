@@ -51,9 +51,20 @@ Setting up an effective testing suite for R can involve the following tools:
 
 ## Setup steps
 
+If you **have not initialized** you package, they you can use the `init_iqss_package` function from the IQSSdevtools package to initialize a skeleton package with the infrastructure needed to create a test suite. This will include:
+
+-   A *test* directory in your package containing
+
+    -   a *testthat.R* file setting up the tests, including loading needed packages.
+    -   *testthat* directory for R files with tests.
+
+-   *.travis.yml* and *appveyor.yml* files needed to set up continuous integration on [Travis CI](https://travis-ci.org/) (for Linux and macOS) and [Appveyor CI](https://www.appveyor.com/) (for Windows).
+
 You can set up a testing suite at any time in an R package development process using the following steps:
 
-1.  Include **executable examples** in your documentation with the roxygen2 `@examples` tag. Note that the
+1.  Include **executable examples** in your documentation with the roxygen2 `@examples` tag. These examples will be run when you `check` the package. Note that the implicit expectation when using executable examples as tests is that they don't fail. This is a weak expectation.
+
+2.  Set your package's folder as the working directory and **initialize a unit test skeleton** with `add_test_suit` from the IQSSdevtools package.
 
 # Development process
 
