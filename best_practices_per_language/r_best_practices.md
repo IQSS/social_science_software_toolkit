@@ -77,7 +77,7 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPEMT)](https://github.com/IQSS/IQ
 
 ## Examples
 
-The following are examples of current (as of 2017-03-29) *minimal* compliance with the R IQSS Best Practices.
+The following are examples of current (as of 2017-03-29) *minimal* compliance with the R IQSS Best Practices. The Report Cards were generated with the `check_best_practices` function from the [**IQSSdevtools** package](https://github.com/IQSS/IQSSdevtools) package.
 
 ### Zelig
 
@@ -116,7 +116,7 @@ Background:
   check_time: 2017-03-29 12:03:23
 ```
 
-### Amelia II
+### Amelia
 
 
 ```yaml
