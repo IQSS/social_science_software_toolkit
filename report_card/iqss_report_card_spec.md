@@ -112,7 +112,7 @@ The `Background` parent node **may** contain the following fields:
 | `package_name`               | Name of the software package for the Report Card           | string   | all      |
 | `package_version`            | Version number of the software package for the Report Card | string   | all      |
 | `package_language`           | Primary programming language used to write the package     | string   | all      |
-| `package_commit_sha`         | Most recent package git commit SHA                         | numeric  | all      |
+| `package_commit_sha`         | Most recent package git commit SHA                         | string   | all      |
 | `iqss_bestpractices_version` | IQSS Best Practices version references                     | string   | all      |
 | `iqssdevtools_version`       | IQSS Best Practices version references                     | string   | R        |
 | `check_time `                | Time of IQSS Best Practices check                          | string   | all      |

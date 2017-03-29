@@ -34,7 +34,7 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPEMT)](https://github.com/IQSS/IQ
 
 -   The package DESCRIPTION file should include a `BugReports` field with a URL that users can visit to report issues with the package. [GitHub Issues](https://guides.github.com/features/issues/) is the recommended platform for handling bug reports.
 
-    +   In addition to a place to make bugreports, an easy to use discussion forum should be available and maintained to build a package community.  
+    +   In addition to a place to make bugreports, an easy to use discussion forum should be available and maintained to disceminate announcements and build a package community. Examples include [Google Groups](https://groups.google.com), [Twitter](https://twitter.com/), and [Gitter](https://gitter.im).
 
 -   In addition to the README.md and function specific documentation generated with **roxygen2**, longer explanations of methods and more complex examples should be documented with [vignettes](http://r-pkgs.had.co.nz/vignettes.html).
 
@@ -59,12 +59,14 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPEMT)](https://github.com/IQSS/IQ
 
     +   are tested locally using `check(args = c('--as-cran'))` from the [**devtools**](https://CRAN.R-project.org/package=devtools) package and repotely on [Travis CI](https://travis-ci.org/) (Linux and macOS) and [Appveyor](https://www.appveyor.com/) (Windows). This tests that the package can build, all tests pass, including CRAN requirements.
 
-    +   has code coverage reported [codecov.io](https://codecov.io/)
+    +   has code coverage reported on [codecov.io](https://codecov.io/)
 
 
-### Version Control
+### Version Control and Open Development
 
--   The full development of the package source code should be version controlled. The recommended version control tool is
+-   The full development of the package source code should be version controlled. The recommended version control tool is [git](https://git-scm.com/).
+
+-   Unless privacy concerns necessitate otherwise, source code should be developed in the open, on a publicly accessible website that has facilities version control, bug reporting, project management, and community contributions. The recommended service is [GitHub](https://github.com/).
 
 ### Report Card
 
@@ -74,3 +76,79 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPEMT)](https://github.com/IQSS/IQ
 
 
 ## Examples
+
+The following are examples of current (as of 2017-03-29) *minimal* compliance with the R IQSS Best Practices.
+
+### Zelig
+
+```yaml
+Documentation:
+  readme: yes
+  roxygen: no
+  news: yes
+  bugreports: yes
+  vignettes: yes
+  website:
+    openscholar: no
+    pkgdown_website: no
+License:
+  gpl3_license: yes
+Version_Control:
+  git: yes
+  github: yes
+Testing:
+  uses_testthat: yes
+  uses_travis: yes
+  uses_appveyor: yes
+  build_check:
+    build_check_completed: yes
+    no_check_warnings: yes
+    no_check_errors: yes
+    no_check_notes: yes
+  test_coverage: 86
+Background:
+  package_name: Zelig
+  package_version: 5.0-18
+  package_language: R
+  package_commit_sha: e51feceaa484f8c9e9c6f206b38542fafd438e15
+  iqss_bestpractices_version: 0.0.0.9000
+  iqssdevtools_version: 0.0.0.9000
+  check_time: 2017-03-29 12:03:23
+```
+
+### Amelia II
+
+
+```yaml
+# Created by IQSSdevtools (0.0.0.9000). Do not edit by hand.
+
+ Documentation:
+  readme: no
+  roxygen: no
+  news: no
+  bugreports: no
+  vignettes: yes
+  website:
+    openscholar: yes
+    pkgdown_website: no
+License:
+  gpl3_license: no
+Version_Control:
+  git: yes
+  github: yes
+Testing:
+  uses_testthat: no
+  uses_travis: no
+  uses_appveyor: no
+  build_check:
+    completed: no
+  test_coverage: 45
+Background:
+  package_name: Amelia
+  package_version: 1.7.4
+  package_language: R
+  package_commit_sha: 2cd1efb6324e3761c10b5063c811cc6d6d72cdda
+  iqss_bestpractices_version: 0.0.0.9000
+  iqssdevtools_version: 0.0.0.9000
+  check_time: 2017-03-29 15:51:57
+```
