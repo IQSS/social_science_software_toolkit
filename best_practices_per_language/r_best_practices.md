@@ -16,7 +16,7 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPMENT)](https://github.com/IQSS/I
 
 -   `init_iqss_package`: create a package skeleton that includes whole or skeleton documents for most of the following Best Practice compliant parts.
 
--   `build_iqss_package`: compile the package, documentation (including website), and run tests
+-   `build_iqss_package`: compile the package, documentation (including website), run tests, and commit changes to GitHub.
 
 -   `publish_package`: pushes a package to GitHub, creates a git version tag and submits the package to CRAN.
 
