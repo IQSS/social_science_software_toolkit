@@ -12,21 +12,21 @@ The Best Practices are *in addition to* package requirements specified by the [C
 
 ## IQSSdevtools
 
-Use the [**IQSSdevtools** package (UNDER DEVELOPMENT)](https://github.com/IQSS/IQSSdevtools) to automate much of the process of initializing, building, checking, and publishing your package in compliance with the Best Practices. Use the following functions as in your software development workflow:
+The [**IQSSdevtools** package (UNDER DEVELOPMENT)](https://github.com/IQSS/IQSSdevtools) automates much of the process of initializing, building, checking, and publishing your package in compliance with the Best Practices. Use the following functions from the package in your software development workflow:
 
 -   `init_iqss_package`: create a package skeleton that includes whole or skeleton documents for most of the following Best Practice compliant parts.
 
 -   `build_iqss_package`: compile the package, documentation (including website), and run tests
 
--   `publish_package`: pushes a package to GitHub, creates a git version tag and submits the package to CRAN.
+-   `publish_package`: push a package to GitHub, create a new git version tag, and submit the package to CRAN.
 
 ### Documentation
 
--   All documentation should be written in [Markdown](https://en.wikipedia.org/wiki/Markdown) with dynamically generated examples with [**rmarkdown**](http://rmarkdown.rstudio.com/) when possible.
+-   When possible, documentation should be written in [Markdown](https://en.wikipedia.org/wiki/Markdown) with dynamically generated examples created with [**rmarkdown**](http://rmarkdown.rstudio.com/).
 
 -   Packages should include a dynamically generated (i.e. created using [**rmarkdown**](http://rmarkdown.rstudio.com/)) README.md file that gives a *brief* introduction to the package including (a) motivation for the package, (b) an explanation of the method the package implements, and (c) a "quickstart" example, i.e. a quick introduction to the package's syntax. The README.md file should be located in the package's root directory.
 
-    +   The README.md file should also use badges to inform users about important package information such as the package version, test coverage, whether the package passes continuous integration tests, the package's development status, how to contact the package maintainers.
+    +   The README.md file should also use badges to inform users about important package information such as the package version, test coverage, whether the package passes continuous integration tests, the package's development status, and how to contact the package maintainers.
 
 -   Function documentation should be written as closely to the function source code as possible and be dynamically generated. As such you should write function documentation with [**roxygen2**](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html). It should be compiled into internal package documentation on build.
 
@@ -36,13 +36,13 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPMENT)](https://github.com/IQSS/I
 
 -   The package DESCRIPTION file should include a `BugReports` field with a URL that users can visit to report issues with the package. [GitHub Issues](https://guides.github.com/features/issues/) is the recommended platform for handling bug reports.
 
-    +   In addition to a place to make bugreports, an easy to use discussion forum platform should be available and maintained to disseminate announcements and build a package community. Examples include [Google Groups](https://groups.google.com), [Twitter](https://twitter.com/), and [Gitter](https://gitter.im).
+    +   In addition to a place to make bug reports, an easy to use discussion platform should be available and maintained to disseminate announcements and build a community around the package. Examples include [Google Groups](https://groups.google.com), [Twitter](https://twitter.com/), and [Gitter](https://gitter.im).
 
 -   In addition to the README.md and function specific documentation generated with **roxygen2**, longer explanations of methods and complex syntax examples should be documented with [vignettes](http://r-pkgs.had.co.nz/vignettes.html).
 
 -   A guide for contributing to the package should be specified in a CONTRIBUTING.md file {WORDING NOT FINALIZED} in the package's root directory. It should include a link to the [IQSS Code of Conduct](https://github.com/IQSS/social_science_software_toolkit/blob/master/contributing/iqss_code_of_conduct.md).
 
--   Documentation should be available both as part of the package installation and on a version controlled public website. **roxygen** documentation and vignettes can be transformed into this website with the [**pkgdown**](https://github.com/hadley/pkgdown) package. IQSS packages should be hosted on OpenScholar {INTEGRATION BETWEEN pkgdown AND OpenScholar not currently implemented}.
+-   Documentation should be available both as part of the package installation and on a version controlled public website. **roxygen** documentation and vignettes can be transformed into this website with the [**pkgdown**](https://github.com/hadley/pkgdown) package. IQSS packages should be hosted on OpenScholar {INTEGRATION BETWEEN pkgdown AND OpenScholar UNDER DEVELOPMENT}.
 
 ### License
 
@@ -63,7 +63,7 @@ Use the [**IQSSdevtools** package (UNDER DEVELOPMENT)](https://github.com/IQSS/I
 
     +   has [high quality expectations](https://github.com/IQSS/social_science_software_toolkit/blob/master/testing/recommended_testing_tools_R.md#what-is-a-high-quality-test),
 
-    +   is tested locally using `check(args = c('--as-cran'))` from the [**devtools**](https://CRAN.R-project.org/package=devtools) package and remotely on [Travis CI](https://travis-ci.org/) (Linux and macOS) and [Appveyor](https://www.appveyor.com/) (Windows). This tests that the package can build, all tests pass, including CRAN requirements.
+    +   is tested locally using `check(args = c('--as-cran'))` from the [**devtools**](https://CRAN.R-project.org/package=devtools) package and remotely on [Travis CI](https://travis-ci.org/) (Linux and macOS) and [Appveyor](https://www.appveyor.com/) (Windows). These tools ensure that the package can build and all tests pass, including CRAN requirements.
 
     +   has code coverage reported on [codecov.io](https://codecov.io/).
 

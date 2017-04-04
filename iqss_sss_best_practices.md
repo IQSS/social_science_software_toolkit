@@ -1,16 +1,16 @@
-# IQSS Best Practices for Social Science Software Development
+# IQSS Best Practices for Software Development
 
 |              |                     |
 | ------------ | ------------------- |
 | Version      | 0.0.0.9000          |
-| Last Updated | 2017-03-29          |
+| Last Updated | 2017-04-04          |
 | Created      | 2017-03-28          |
 
 **UNDER DEVELOPMENT. The best practices are under review and subject to change.**
 
 # Aims
 
-The aims of the Institute for Quantitative Social Science (IQSS), Harvard University Best Practices for Social Science Software Development are to enable the creation and maintenance of software that is:
+The aims of the Institute for Quantitative Social Science (IQSS), Harvard University Best Practices for Software Development are to enable the creation and maintenance of software that is:
 
 -   robust,
 

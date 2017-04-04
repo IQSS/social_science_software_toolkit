@@ -8,7 +8,7 @@
 
 ## Aims
 
-This repository contains IQSS best practices and points to resources for developing social science statistical software that is:
+This repository contains IQSS best practices and points to resources for developing statistical software that is:
 
 -   robust,
 
@@ -22,13 +22,13 @@ This repository contains IQSS best practices and points to resources for develop
 
 ## Contributing
 
-If you are interested in contributing to the IQSS Social Science Software Toolkit, please first read our [Contributor Guidelines](CONTRIBUTING.md) and [Code of Conduct](contributing/iqss_code_of_conduct.md).
+If you are interested in contributing to the IQSS Software Development Toolkit, please first read our [Contributor Guidelines](CONTRIBUTING.md) and [Code of Conduct](contributing/iqss_code_of_conduct.md).
 
 ## Contents
 
 This repository has the following contents:
 
--   [IQSS Best Practices for Social Science Software Development](iqss_sss_best_practices.md)
+-   [IQSS Best Practices for Statistical Software Development](iqss_sss_best_practices.md)
 
 -   [Guidelines for contributing to the toolkit](CONTRIBUTING.md)
 
@@ -42,7 +42,7 @@ This repository has the following contents:
 
 -   [Suggestions for version controlling a statistical software project](version_control/)
 
--   [IQSS Report Card](report_card/): schema for reporting to what extent a piece of social science statistical software minimally complies with the IQSS Best Practices.
+-   [IQSS Report Card](report_card/): schema for reporting to what extent a piece of statistical software minimally complies with the IQSS Best Practices.
 
 -   [IQSSdevtools](https://github.com/IQSS/IQSSdevtools): an R package for initialising, checking, and publishing packages that complie with the IQSS Best Practices.
 
