@@ -3,12 +3,14 @@
 |              |                     |
 | ------------ | ------------------- |
 | Version      | 0.0.0.9000          |
-| Last Updated | 2017-03-29          |
+| Last Updated | 2017-04-03          |
 | Created      | 2017-03-29          |
 
 The following tools are recommended for developing statistical software packages in R that comply with the [IQSS Best Practices for Statistical Software Development](https://github.com/IQSS/social_science_software_toolkit/blob/master/iqss_sss_best_practices.md).
 
 The Best Practices are *in addition to* package requirements specified by the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/doc/manuals/r-release/R-exts.html).
+
+For details on how to use many of the tools listed below, please see Hadley Whickham's free online book [R Packages](http://r-pkgs.had.co.nz/).
 
 ## IQSSdevtools
 
@@ -16,7 +18,7 @@ The [**IQSSdevtools** package (UNDER DEVELOPMENT)](https://github.com/IQSS/IQSSd
 
 -   `init_iqss_package`: create a package skeleton that includes whole or skeleton documents for most of the following Best Practice compliant parts.
 
--   `build_iqss_package`: compile the package, documentation (including website), and run tests
+-   `build_iqss_package`: compile the package, documentation (including website), run tests, and commit changes to GitHub.
 
 -   `publish_package`: push a package to GitHub, create a new git version tag, and submit the package to CRAN.
 
@@ -26,7 +28,7 @@ The [**IQSSdevtools** package (UNDER DEVELOPMENT)](https://github.com/IQSS/IQSSd
 
 -   Packages should include a dynamically generated (i.e. created using [**rmarkdown**](http://rmarkdown.rstudio.com/)) README.md file that gives a *brief* introduction to the package including (a) motivation for the package, (b) an explanation of the method the package implements, and (c) a "quickstart" example, i.e. a quick introduction to the package's syntax. The README.md file should be located in the package's root directory.
 
-    +   The README.md file should also use badges to inform users about important package information such as the package version, test coverage, whether the package passes continuous integration tests, the package's development status, and how to contact the package maintainers.
+    +   The README.md file should also use [badges](https://shields.io/) to inform users about important package information such as the package version, test coverage, whether the package passes continuous integration tests, the package's development status, how to contact the package maintainers.
 
 -   Function documentation should be written as closely to the function source code as possible and be dynamically generated. As such you should write function documentation with [**roxygen2**](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html). It should be compiled into internal package documentation on build.
 
