@@ -3,14 +3,14 @@
 |              |                     |
 | ------------ | ------------------- |
 | Version      | 0.0.0.9000          |
-| Last Updated | 2017-04-04          |
+| Last Updated | 2017-04-05          |
 | Created      | 2017-03-28          |
 
 **UNDER DEVELOPMENT. The best practices are under review and subject to change.**
 
-# Aims
+# How to use the Best Practices
 
-The aims of the Institute for Quantitative Social Science (IQSS), Harvard University Best Practices for Software Development are to enable the creation and maintenance of software that is:
+The Institute for Quantitative Social Science (IQSS), Harvard University Best Practices for Software Development are intended as a general guide to developing software that is:
 
 -   robust,
 
@@ -22,9 +22,11 @@ The aims of the Institute for Quantitative Social Science (IQSS), Harvard Univer
 
 -   enables reproducible research.
 
-The best practices in this document are intended to be applicable to social science statistical software regardless of the programming language it is written in. Language specific guidelines based on these best practices are documented elsewhere in this repository.
+The extent to which they apply to any specific project will vary depending on the software's purpose. Nonetheless, considering these suggestions and coming up with thoughtful reasons for why they do or do not apply to your software, when you begin a software project can improve its quality and usefulness.
 
-## Best practices
+The best practices in this document are intended to be applicable to statistical software development regardless of the programming language it is written in. Language specific guidelines based on these best practices are documented elsewhere in this repository.
+
+# Best practices
 
 Social science statistical software is more likely to achieve the aims listed above if they have the following characteristics:
 
@@ -44,7 +46,7 @@ Social science statistical software is more likely to achieve the aims listed ab
 
 2.  Have an **open source license**
 
--   For example [GPL (>= 3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+-   For example, [GPL (>= 3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 3.  Are comprehensively and automatically **tested**
 
@@ -64,13 +66,13 @@ Social science statistical software is more likely to achieve the aims listed ab
 
 7.  Uses an [**IQSS Report Card**](report_card/iqss_report_card_spec.md) to report their minimal compliance with these Best Practices
 
-## Report card
+# Report card
 
 Minimal compliance with the Best Practices can be recorded using the [IQSS Report Card Specification](report_card/iqss_report_card_spec.md).
 
 For software packages written in R, you can automatically generate a report card using the `check_best_practices` function from the [IQSSdevtools](IQSSdevtools) package.
 
-## Language-specific Best Practices
+# Language-specific Best Practices
 
 The tools for implementing the Best Practices are often different depending on the programming language used to create the statistical software.
 

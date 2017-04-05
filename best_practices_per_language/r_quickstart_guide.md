@@ -6,17 +6,20 @@ The [IQSSdevtools package](https://github.com/IQSS/IQSSdevtools) automates much 
 
 ## 1. Initializing the package
 
-Start your R package by initializing the package's core required files. For example, imagine we want to start a package called `MyPackage` in our current working directory. To do this run:
+Before loading up R, we recommend setting up a GitHub account [here](https://github.com/join), if you haven't done so already. GitHub stores your ([version controlled](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)) code remotely in a GitHub "repository", enables collaboration, and provides a platform for your users to report bugs. . For more details about Git and GitHub see [HW: Git and GitHub](http://r-pkgs.had.co.nz/git.html).
+
+Once you have a GitHub account you should get your GitHub personal access token. To do this visit the [GitHub tokens website](https://github.com/settings/tokens). Having your personal access token will allow **IQSSdevtools** to create your packages GitHub repository and update it as you make changes to your package.
+
+Once you have your GitHub personal access token, open R and use **IQSSdevtools** to initialise your new R package. For example, imagine we want to start a package called `MyPackage` in our current working directory and our GitHub personal access token is `adfaoihgalkxygoidsn`. Initialize this package using the following code in the R console:
 
 ```r
-IQSSdevtools::init_iqss_package(path = "MyPackage")
+IQSSdevtools::init_iqss_package(path = "MyPackage",
+                                github_auth_token = "adfaoihgalkxygoidsn")
 ```
 
-This creates a new "skeleton" package with all of the basic files you will need. You should only call this function once.
+Running this function will create a new folder called *MyPackage* in your working directory. This folder will contain a "skeleton" R package that includes all of the basic files you will need to meet the IQSS best practives. You should only call this function once. Also, do not store your GitHub personal access token in publicly accessible files, such as a file in your GitHub repository. It should be kept secret.
 
-We recommend including your GitHub personal access token with the `github_auth_token` argument when you call `init_iqss_package`. Doing so will allow the function to create a new GitHub repository for your package. GitHub stores your ([version controlled](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)) code remotely, enables collaboration, and provides a platform for your users to report bugs. To get your token sign up for GitHub (if you haven't already) and visit the [GitHub tokens website](https://github.com/settings/tokens). For more details about Git and GitHub see [HW: Git and GitHub](http://r-pkgs.had.co.nz/git.html).
-
-Now that your package is initialized, you need to manually fill in the package's contents. Navigate to the new *MyPackage* folder and add contents to the following folders/files:
+Now that your package is initialized, you need to manually fill in the package's contents. On your desktop, navigate to the new *MyPackage* folder and add contents to the following folders/files:
 
 -   The *README.Rmd* file: This file will likely be your users' introduction to the package. As such it should include a brief description of the package's purpose, syntax, and a quickstart guide. The package is written using Markdown syntax–an easy to use markup language. You can create executable examples that are run and the results included in the final output using RMarkdown. For am example, see the [Zelig README](https://github.com/IQSS/Zelig/blob/ivreg/README.Rmd). {BADGES: I want to write a package that will automatically add in the appropriate badges, so that users don't need to think about this}
 
@@ -31,7 +34,7 @@ BugReports: http://github.com/MyUserName/MyPackage/issues
 
 -   The *R* folder: This folder contains all of your package's R source code. You will also use the R source code files you create in this folder to document your code. For details on how to organize your R code see [HW: R](http://r-pkgs.had.co.nz/r.html) code. For details on how to write package documentation see [HW: Object documentation](http://r-pkgs.had.co.nz/man.html).
 
--   The *tests* folder. This folder contains all of the tests you will use to ensure that your package does what you want it to. For details on how to write R tests see [HW: Testing](http://r-pkgs.had.co.nz/tests.html). `init_iqss_package` also sets up the basic infrastructure for you to run your tests on [Travis CI](https://travis-ci.org/) and [Appveyor](https://ci.appveyor.com/) servers. These services allow you to test that your package is able to build and passes its tests in environments other than locally on your computer. Travis CI runs the tests on a Linux (and optionally macOS) system. Appveyor tests it on Windows. For details on how to set up these tools and implement them in a "test-driven" workflow see the [IQSS R testing webpage](https://github.com/IQSS/social_science_software_toolkit/blob/master/testing/recommended_testing_tools_R.md) {INCOMPLETE}.
+-   **Advanced, but important to do before publishing**--The *tests* folder. This folder contains all of the tests you will use to ensure that your package does what you want it to. For details on how to write R tests see [HW: Testing](http://r-pkgs.had.co.nz/tests.html). `init_iqss_package` also sets up the basic infrastructure for you to run your tests on [Travis CI](https://travis-ci.org/) and [Appveyor](https://ci.appveyor.com/) servers. These services allow you to test that your package is able to build and passes its tests in environments other than locally on your computer. Travis CI runs the tests on a Linux (and optionally macOS) system. Appveyor tests it on Windows. For details on how to set up these tools and implement them in a "test-driven" workflow see the [IQSS R testing webpage](https://github.com/IQSS/social_science_software_toolkit/blob/master/testing/recommended_testing_tools_R.md) {INCOMPLETE}.
 
 -   {FILL IN WEBSITE INSTRUCTIONS WHEN OPENSCHOLAR SETUP}
 

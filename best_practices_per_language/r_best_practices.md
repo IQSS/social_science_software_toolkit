@@ -3,12 +3,14 @@
 |              |                     |
 | ------------ | ------------------- |
 | Version      | 0.0.0.9000          |
-| Last Updated | 2017-04-03          |
+| Last Updated | 2017-04-05          |
 | Created      | 2017-03-29          |
 
 The following tools are recommended for developing statistical software packages in R that comply with the [IQSS Best Practices for Statistical Software Development](https://github.com/IQSS/social_science_software_toolkit/blob/master/iqss_sss_best_practices.md).
 
 The Best Practices are *in addition to* package requirements specified by the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/doc/manuals/r-release/R-exts.html).
+
+See the [Quickstart Guide](https://github.com/IQSS/social_science_software_toolkit/blob/master/best_practices_per_language/r_quickstart_guide.md) for a step-by-step introduction to implementing the best practices.
 
 For details on how to use many of the tools listed below, please see Hadley Whickham's free online book [R Packages](http://r-pkgs.had.co.nz/).
 
