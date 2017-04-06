@@ -1,16 +1,16 @@
 # R Package Development Quickstart Guide
 
-This Quickstart Guide lays out the general steps you should follow to develop and publish an R package that conforms to the [IQSS Best Practices for R Statistical Software Development](https://github.com/IQSS/social_science_software_toolkit/blob/master/best_practices_per_language/r_best_practices.md).
+This Quickstart Guide lays out the general steps you should follow to develop and publish an R package that conforms with the [IQSS Best Practices for R Statistical Software Development](https://github.com/IQSS/social_science_software_toolkit/blob/master/best_practices_per_language/r_best_practices.md).
 
-The [IQSSdevtools package](https://github.com/IQSS/IQSSdevtools) automates much of the work of setting up the package, checking that it can be built/passes its tests, and publishing it. Nonetheless, you have to fill in the package's contents--source code, documentation, many of its tests--manually. For details on how to do this, in the Quickstart Guide we link to relevant sections from Hadley Wickham's (HW) free book [*R Packages*](http://r-pkgs.had.co.nz/).
+The [IQSSdevtools package](https://github.com/IQSS/IQSSdevtools) automates much of the work of setting up the package, checking that it can be built/passes its tests, and publishing it. Nonetheless, you have to manually fill in the package's contents--source code, documentation and many of its tests. For extended details on how to do this, in this Quickstart Guide we link to other resources, including relevant sections from Hadley Wickham's (HW) free book [*R Packages*](http://r-pkgs.had.co.nz/).
 
 ## 1. Initializing the package
 
-Before loading up R, we recommend setting up a GitHub account [here](https://github.com/join), if you haven't done so already. GitHub stores your ([version controlled](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)) code remotely in a GitHub "repository", enables collaboration, and provides a platform for your users to report bugs. . For more details about Git and GitHub see [HW: Git and GitHub](http://r-pkgs.had.co.nz/git.html).
+Before starting up R, we recommend getting a GitHub account [here](https://github.com/join), if you don't already have one. You can use GitHub to remotely store your ([version controlled](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)) code in a GitHub "repository". The service also enables collaboration and provides a platform for your users to report bugs. For more details about Git and GitHub see [HW: Git and GitHub](http://r-pkgs.had.co.nz/git.html).
 
-Once you have a GitHub account you should get your GitHub personal access token. To do this visit the [GitHub tokens website](https://github.com/settings/tokens). Having your personal access token will allow **IQSSdevtools** to create your packages GitHub repository and update it as you make changes to your package.
+Once you have a GitHub account, you should get a GitHub personal access token. To do this visit the [GitHub tokens website](https://github.com/settings/tokens). Having a personal access token will allow **IQSSdevtools** to create your package's GitHub repository, as well as update it as you make changes to your package.
 
-Once you have your GitHub personal access token, open R and use **IQSSdevtools** to initialise your new R package. For example, imagine we want to start a package called `MyPackage` in our current working directory and our GitHub personal access token is `adfaoihgalkxygoidsn`. Initialize this package using the following code in the R console:
+After getting your GitHub personal access token, open R and use **IQSSdevtools** to initialise your new R package. For example, imagine we want to start a package called `MyPackage` in our current working directory and our GitHub personal access token is `adfaoihgalkxygoidsn`. Initialize this package using the following code in the R console:
 
 ```r
 IQSSdevtools::init_iqss_package(path = "MyPackage",
