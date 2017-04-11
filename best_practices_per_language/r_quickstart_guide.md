@@ -31,12 +31,7 @@ Now that your package is initialized, you need to manually fill in the package's
 
 -   **The *README.Rmd* file:** This file will likely be your users' introduction to the package. As such it should include a brief description of the package's purpose, syntax, and a quickstart guide. For a quick introduction to writing a *README.Rmd* see the [IQSS R Markdown Introduction](https://github.com/IQSS/social_science_software_toolkit/blob/master/documentation/rmarkdown_readme_intro.md). Also, for complete *README* example, see the [Zelig README](https://github.com/IQSS/Zelig/blob/ivreg/README.Rmd). {BADGES: I want to write a package that will automatically add in the appropriate badges, so that users don't need to think about this}
 
--   **The *DESCRIPTION* file:** This contains the package's metadata, e.g. authors' names, a description of what the package does, other packages required by your package, and so on. For details see [HW: Package metadata](http://r-pkgs.had.co.nz/description.html). In the *DESCRIPTION*, you should include a link to the package's GitHub main page {CHANGE TO OPEN SCHOLAR WHEN AVAILABLE} and [Issues page](https://guides.github.com/features/issues/). The latter is a platform for users to contribute to the package's development and report bugs. For example, include in your *DESCRIPTION* file:
-
-```
-URL: http://github.com/MyUserName/MyPackage
-BugReports: http://github.com/MyUserName/MyPackage/issues
-```
+-   **The *DESCRIPTION* file:** This contains the package's metadata, e.g. authors' names, a description of what the package does, other packages required by your package, and so on. For details see [HW: Package metadata](http://r-pkgs.had.co.nz/description.html). `init_iqss_package` will include in the *DESCRIPTION* a link to the package's GitHub main page {CHANGE TO OPEN SCHOLAR WHEN AVAILABLE} and [Issues page](https://guides.github.com/features/issues/). The latter is a platform for users to contribute to the package's development and report bugs. 
 
 -   **The *NEWS.md* file:** A file where where you record all of the major and minor changes that you have made the package for each version. For an example see [Zelig NEWS.md](https://raw.githubusercontent.com/IQSS/Zelig/master/NEWS.md).
 
