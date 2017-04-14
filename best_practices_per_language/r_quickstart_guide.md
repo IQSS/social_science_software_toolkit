@@ -12,6 +12,8 @@ install_github("IQSS/IQSSdevtools")
 
 While **IQSSdevtools** automates much of the process of implementing the best practices, you will of course still have to manually fill in the package's contents--source code, documentation and many of its tests. For extended details on how to do this, in this Quickstart Guide we link to other resources, including relevant sections from Hadley Wickham's (HW) free book [*R Packages*](http://r-pkgs.had.co.nz/).
 
+We also highly recommend using [RStudio](https://www.rstudio.com/) for package development. This program has [many built in capabilities](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio) that make package development easier.
+
 ## 1. Initializing the package
 
 Before starting up R, we recommend getting a GitHub account [here](https://github.com/join), if you don't already have one. You can use GitHub to remotely store your ([version controlled](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)) code in a GitHub "repository". The service also enables collaboration and provides a platform for your users to report bugs. For more details about Git and GitHub see [HW: Git and GitHub](http://r-pkgs.had.co.nz/git.html).
