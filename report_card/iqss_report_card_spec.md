@@ -5,8 +5,8 @@
 |              |                     |
 | ------------ | ------------------- |
 | Authors      | Christopher Gandrud |
-| Version      | 0.0.0.9000          |
-| Last Updated | 2017-03-29          |
+| Version      | 0.0.0.9001          |
+| Last Updated | 2017-06-13          |
 | Created      | 2017-03-28          |
 
 ## Goals
@@ -43,15 +43,16 @@ An IQSS Report Card **may** have the following child nodes. Typically different 
 
 The `Documentation` parent node **may** contain the following fields:
 
-| Name              | Description | Type     | Language |
-| ----------------- | ----------- | -------- | -------- |
-| `readme`          | A README file explaining the software's aims and with a quickstart example | boolean | all |
-| `roxygen`         | Documentation produced with [roxygen2](https://CRAN.R-project.org/package=roxygen2) | boolean | R |
-| `changelog`       | Document detailing all changes per release | boolean | non-R |
-| `news`            | Document detailing all changes per release (used instead of changelog) | boolean | R |
-| `bugreports`      | URL for public location to make bug reports | boolean | all |
-| `vignettes`       | Longform documentation with detailed descriptions | boolean | R |
-| `website`         | A dynamically generated documentation website | node | all |
+| Name               | Description | Type     | Language |
+| ------------------ | ----------- | -------- | -------- |
+| `readme`           | A README file explaining the software's aims and with a quickstart example | boolean | all |
+| `roxygen`          | Documentation produced with [roxygen2](https://CRAN.R-project.org/package=roxygen2) | boolean | R |
+| `changelog`        | Document detailing all changes per release | boolean | non-R |
+| `news`             | Document detailing all changes per release (used instead of changelog) | boolean | R |
+| `bugreports`       | URL for public location to make bug reports | boolean | all |
+| `vignettes`        | Longform documentation with detailed descriptions | boolean | R |
+| `website`          | A dynamically generated documentation website | node | all |
+| `all_urls_working` | All URLs in user documentation are working and don't return errors | boolean | all |
 
 The `website` node **may** contain the following fields:
 
